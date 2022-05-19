@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Futbol oyunu</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body onload="dowland()">
+    <div id="redgoal" class="redgoal">
+      Kırmızı takım Gol attı!
+    </div>
+       <div id="bluegoal" class="bluegoal">
+      Mavi takım Gol attı!
+    </div>
+    <div class="oyunmenu">
+      <center>
+    <div id="table" class="skor">
+    <b id="score1"></b><b style="background-color:brown; padding:10px 1px;">-</b><b id="score2"></b>
+    </div>
+    <br>
+    <div id="screen" class="giris">
+    <h3>2D football</h3>
+    <input id="name1" type="text" placeholder="1.Oyuncu adı"><br>
+    <input id="name2" type="text" placeholder="2.Oyuncu adı">
+    <br>
+    <button class="button" onclick="opengame()">
+    Oyuna başla
+    </button>
+    </div>
+    <canvas id="canvas" width="700" height="500">Tarayıcınız Canvas'i desteklemediği için maalesef oyunumuzu oynayamazsınız</canvas>
+      </center>
+    <br><br>
+    </div>
+    <div id="logs" class="log">
+    <center>
+    <div id="log-messages" >
+      
+    </div>
+    </center>
+    </div>
+		<script type="text/javascript" src="script.js"></script>	
+    </body>
+</html>
